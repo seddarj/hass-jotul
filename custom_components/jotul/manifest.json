@@ -11,5 +11,6 @@
   "codeowners": [
     "@seddarj"
   ],
+  "version": "0.1.0",
   "iot_class": "assumed_state"
 }
