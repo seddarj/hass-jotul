@@ -1,0 +1,15 @@
+{
+  "domain": "jotul",
+  "name": "Jotul",
+  "config_flow": true,
+  "documentation": "https://www.home-assistant.io/integrations/jotul",
+  "requirements": [],
+  "ssdp": [],
+  "zeroconf": [],
+  "homekit": {},
+  "dependencies": [],
+  "codeowners": [
+    "@seddarj"
+  ],
+  "iot_class": "assumed_state"
+}
