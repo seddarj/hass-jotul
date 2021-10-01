@@ -1,0 +1,6 @@
+{
+  "name": "Jotul",
+  "domains": ["number", "sensor", "switch"],
+  "iot_class": "Local Polling",
+  "homeassistant": "2021.9.6"
+}
