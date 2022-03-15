@@ -42,7 +42,7 @@ class JotulStatusSwitch(SwitchEntity):
         """Fetch new state data for the switch.
         This is the only method that should fetch new data for Home Assistant.
         """
-        self._attr_is_on = self.jotul.get_status() > 0
+        self._attr_is_on = self.jotul.get_status() > 1
 
     def turn_on(self) -> None:
         """Turn on the device.
