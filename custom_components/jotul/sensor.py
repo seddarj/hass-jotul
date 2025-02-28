@@ -2,7 +2,7 @@
 from __future__ import annotations
 from homeassistant.config_entries import ConfigEntry
 
-from homeassistant.const import TEMP_CELSIUS
+from homeassistant.const import UnitOfTemperature
 from homeassistant.components.sensor import SensorEntity
 from homeassistant.core import HomeAssistant
 
@@ -44,7 +44,7 @@ class JotulTemperatureSensor(SensorEntity):
     @property
     def unit_of_measurement(self) -> str:
         """Return the unit of measurement."""
-        return TEMP_CELSIUS
+        return UnitOfTemperature.CELSIUS
 
     @property
     def icon(self) -> str:
@@ -80,7 +80,7 @@ class JotulTargetTemperatureSensor(SensorEntity):
     @property
     def unit_of_measurement(self) -> str:
         """Return the unit of measurement."""
-        return TEMP_CELSIUS
+        return UnitOfTemperature.CELSIUS
 
     @property
     def icon(self) -> str:
