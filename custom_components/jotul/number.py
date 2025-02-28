@@ -4,7 +4,7 @@ from homeassistant.config_entries import ConfigEntry
 
 from homeassistant.components.number import NumberEntity
 from homeassistant.core import HomeAssistant
-from homeassistant.const import TEMP_CELSIUS
+from homeassistant.const import UnitOfTemperature
 
 from . import Jotul
 from .const import DOMAIN
@@ -45,7 +45,7 @@ class JotulTargetTemperatureNumber(NumberEntity):
     @property
     def native_unit_of_measurement(self) -> str:
         """Return the unit of measurement."""
-        return TEMP_CELSIUS
+        return UnitOfTemperature.CELSIUS
 
     def update(self) -> None:
         """Fetch new state data for the number.
